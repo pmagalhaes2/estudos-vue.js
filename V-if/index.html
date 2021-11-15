@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <title>V-if</title>
+</head>
+
+<body>
+
+    <div id="app">
+        <span v-if="show">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias illum totam cupiditate itaque sequi nisi nulla asperiores. Quod dolore porro temporibus consectetur aspernatur! Iure, libero. Earum quidem alias mollitia ex!</span>
+        <br>
+        <br>
+        <button @click="onShowClick">
+            {{ show ? 'Esconder' : 'Mostrar'}}
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
