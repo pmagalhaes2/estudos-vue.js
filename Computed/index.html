@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <title>V-else</title>
+</head>
+
+<body>
+
+    <div id="app">
+        <span v-if="isUnderAge">Para acessar o conteúdo, é necessário ser maior de 18 anos de idade!</span>
+        <span v-else-if="isOld">Veja nossa cartela de vinhos especial</span>
+        <template v-else> <span>Veja os itens recomendados:</span>
+        <ul>
+            <li>Black label</li>
+            <li>Vodka</li>
+            <li>Gin Tanqueray</li>
+        </ul>
+    </template>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
